@@ -1,0 +1,492 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tion"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="daraunited.com.fisherinnovapps.ThreeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+        <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:theme="@style/AppThemeDARA"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation" />
+        <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/nestedScrollViewc">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/lynho"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:weightSum="1">
+                    <CalendarView
+                        android:id="@+id/calendarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/white"
+                        android:theme="@style/AppThemeLite"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="0.08" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar2"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:progress="50"
+                        android:theme="@style/AppThemeLite"
+                        android:layout_weight="0.08" />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_two_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:theme="@style/AppThemeDARA"
+                        android:layout_gravity="center"
+                        android:layout_margin="16dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/thumbnailtwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/album_cover_height"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:src="@drawable/pelets"
+                                android:scaleType="centerCrop" />
+                            <TextView
+                                android:id="@+id/title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/thumbnailtwo"
+                                android:paddingLeft="@dimen/album_title_padding"
+                                android:paddingRight="@dimen/album_title_padding"
+                                android:paddingTop="@dimen/album_title_padding"
+                                android:textColor="@color/album_title"
+                                android:textSize="@dimen/album_title"
+                                android:text="Quantité d'aliment / poisson"/>
+                            <TextView
+                                android:id="@+id/count"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/title"
+                                android:text="Analyse de l'elevage..."
+                                android:paddingBottom="@dimen/songs_count_padding_bottom"
+                                android:paddingLeft="@dimen/album_title_padding"
+                                android:paddingRight="@dimen/album_title_padding"
+                                android:textSize="@dimen/songs_count"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_two_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:theme="@style/AppThemeDARA"
+                        android:layout_margin="16dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/thumbnailone"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/album_cover_height"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:src="@drawable/handf"
+                                android:scaleType="centerCrop" />
+                            <TextView
+                                android:id="@+id/titleone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/thumbnailone"
+                                android:paddingLeft="@dimen/album_title_padding"
+                                android:paddingRight="@dimen/album_title_padding"
+                                android:paddingTop="@dimen/album_title_padding"
+                                android:textColor="@color/album_title"
+                                android:textSize="@dimen/album_title"
+                                android:text="Quantité d'aliment total à distribuer aujourd'hui"/>
+                            <TextView
+                                android:id="@+id/countone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/titleone"
+                                android:text="Analyse de l'elevage..."
+                                android:paddingBottom="@dimen/songs_count_padding_bottom"
+                                android:paddingLeft="@dimen/album_title_padding"
+                                android:paddingRight="@dimen/album_title_padding"
+                                android:textSize="@dimen/songs_count"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true" />
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_two_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:theme="@style/AppThemeDARA"
+                        android:layout_gravity="center"
+                        android:layout_margin="16dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/thumbnailonea"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/album_cover_height"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:src="@drawable/presso"
+                                android:scaleType="centerCrop" />
+                            <TextView
+                                android:id="@+id/titleonea"
+                                android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                android:layout_below="@id/thumbnailonea"
+                                android:paddingLeft="@dimen/album_title_padding"
+                                android:paddingRight="@dimen/album_title_padding"
+                                android:paddingTop="@dimen/album_title_padding"
+                                android:textColor="@color/album_title"
+                                android:textSize="@dimen/album_title"
+                                android:text="Poids prévisionnel des animaux en gramme"/>
+                            <TextView
+                                android:id="@+id/countwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/titleonea"
+                                android:text="Analyse de l'elevage..."
+                                android:paddingBottom="@dimen/songs_count_padding_bottom"
+                                android:paddingLeft="@dimen/album_title_padding"
+                                android:paddingRight="@dimen/album_title_padding"
+                                android:textSize="@dimen/songs_count"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_two_bgk"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:theme="@style/AppThemeDARA"
+                        android:layout_gravity="center"
+                        android:layout_margin="16dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/thumbnailoneap"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/album_cover_height"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:clickable="true"
+                                android:src="@drawable/reset"
+                                android:scaleType="centerCrop" />
+                            <TextView
+                                android:id="@+id/titleoneap"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/thumbnailoneap"
+                                android:textColor="@color/dot_dark_screen1"
+                                android:paddingLeft="@dimen/album_title_padding"
+                                android:paddingRight="@dimen/album_title_padding"
+                                android:paddingTop="@dimen/album_title_padding"
+                                android:textSize="@dimen/album_title"
+                                android:text="Reinitialiser les informations"/>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lynda"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tltvert"
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/bg_screen4"
+                        android:textAlignment="center"
+                        android:text="Aucune Tâches / Notifications" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/startlynho"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/ttver"
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/bg_screen3"
+                        android:textAlignment="center"
+                        android:text="Entrer les informations concernant votre élevage" />
+                    <TextView
+                        android:id="@+id/palutest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/dot_dark_screen1"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:text="Date de demarrage de votre élevage" />
+                    <TextView
+                        android:id="@+id/eledate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/jumbo"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:text="Selectionner la date" />
+                    <TextView
+                        android:id="@+id/palutesyyt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/dot_dark_screen1"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:text="Taille des poissons aujourd'hui (g)" />
+                    <!--  Password Label -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:theme="@style/AppThemeDARAff"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Poids des poissons ce jour en gramme"
+                            android:layout_marginTop="5dp"
+                            android:textSize="18dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/jumbo"
+                            android:inputType="number"
+                            android:id="@+id/Txgrm" />
+                    </android.support.design.widget.TextInputLayout>
+                    <TextView
+                        android:id="@+id/palutesyytg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/dot_dark_screen1"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:text="Nombre de poissons ou alevins à élever" />
+                    <!--  Password Label -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:theme="@style/AppThemeDARAff"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="1dp">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Nombre de poissons"
+                            android:layout_marginTop="5dp"
+                            android:textSize="18dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/jumbo"
+                            android:inputType="number"
+                            android:id="@+id/Txnpo" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <TextView
+                        android:id="@+id/palutesyyttg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/jumbo"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:text="Type de poisson: Clarias" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/floatingActionButton"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/ic_archive_white_24dp"
+                        android:theme="@style/AppThemeDARAff"
+                        app:elevation="12dp"
+                        app:fabSize="normal" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lynfi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:weightSum="1">
+                    <TextView
+                        android:id="@+id/ttvert"
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/bg_screen3"
+                        android:textAlignment="center"
+                        android:text="Entrer les informations concernant votre élevage et commander votre aliment pour vos poisson, adapté à votre localité" />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:theme="@style/AppThemeDARAff"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="1dp">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Nombre de Kg d'aliment"
+                            android:layout_marginTop="10dp"
+                            android:textSize="18dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/jumbo"
+                            android:inputType="number"
+                            android:id="@+id/Txnpouu" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:theme="@style/AppThemeDARAff"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="1dp">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Température de votre eau"
+                            android:layout_marginTop="10dp"
+                            android:textSize="18dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/jumbo"
+                            android:inputType="number"
+                            android:id="@+id/Txnpouuu" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:theme="@style/AppThemeDARAff"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="1dp">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Age de vos poisson"
+                            android:layout_marginTop="10dp"
+                            android:textSize="18dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/jumbo"
+                            android:inputType="number"
+                            android:id="@+id/Txnpouuru" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:theme="@style/AppThemeDARAff"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="1dp">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Informations Supplémentaires"
+                            android:layout_marginTop="10dp"
+                            android:textSize="18dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/jumbo"
+                            android:inputType="text"
+                            android:id="@+id/Txnpouurtu" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/floatingActionButyton"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/ic_shop_white_48dp"
+                        android:theme="@style/AppThemeDARAff"
+                        app:elevation="12dp"
+                        app:fabSize="normal" />
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

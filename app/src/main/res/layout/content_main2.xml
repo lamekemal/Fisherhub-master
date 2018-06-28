@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".matSelect">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="1dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:gravity="center"
+                android:text="Résumé"
+                android:textColor="@color/colorAccent"
+                android:textSize="26dip"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-20dp"
+                android:gravity="center"
+                android:text="Les quantités d'aliment ont été évalués sur 100kg et les prix au killograme"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="9dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Matière première"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccentP" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:enabled="false"
+                    android:text="Qté"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccentP" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:enabled="false"
+                    android:text="Prix"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccentP" />
+            </LinearLayout>
+
+            <!-- ailiment ener-->
+
+            <!-- Mais -->
+            <LinearLayout
+                android:id="@+id/ll_mais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Maïs"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/qte_mais"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qté)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/fprix_mais"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- cmac -->
+            <LinearLayout
+                android:id="@+id/ll_cmac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Cossette de manioc"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/qté_cmac"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qte)"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_cmac"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- hr -->
+            <LinearLayout
+                android:id="@+id/ll_hr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Huie rouge"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/qte_hr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qte)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_hr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- Smais -->
+            <LinearLayout
+                android:id="@+id/ll_smais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+               <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Son de maïs"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/qte_smais"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qté)"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_smais"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- sriz -->
+            <LinearLayout
+                android:id="@+id/ll_sriz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Son de riz"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/qte_sriz"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qté)"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_sriz"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <!-- sble -->
+            <LinearLayout
+                android:id="@+id/ll_sble"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Son de blé"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/qte_sble"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qté)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_sble"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- dre -->
+            <LinearLayout
+                android:id="@+id/ll_dre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Drèche"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/qte_dre"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qté)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_dre"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- tsoja -->
+            <LinearLayout
+                android:id="@+id/ll_tsoja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Tourteau soja"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/qte_tsoja"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qté)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_tsoja"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- tcoton -->
+            <LinearLayout
+                android:id="@+id/ll_tcoton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Tourteau coton"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/qte_tcoton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qté)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_tcoton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- tpalm -->
+            <LinearLayout
+                android:id="@+id/ll_tpalm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Tourteau palmiste"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/qte_tpalm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qté)"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_tpalm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- tara -->
+            <LinearLayout
+                android:id="@+id/ll_tara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Tourteau arachide"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/qte_tara"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qté)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_tara"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- fpoi -->
+            <LinearLayout
+                android:id="@+id/ll_fpoi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Farine de poisson"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/qte_fpoi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:inputType="number"
+                    android:hint="(Qté)"
+                    android:enabled="false"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_fpoi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:inputType="number"
+                    android:hint="(Prix)"
+                    android:enabled="false"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- soja -->
+            <LinearLayout
+                android:id="@+id/ll_soja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Graine de soja torifié"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/qte_soja"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qté)"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_soja"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- coq -->
+            <LinearLayout
+                android:id="@+id/ll_coq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Coquille d'huitre"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/qte_coq"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qte)"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_coq"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- phbic -->
+            <LinearLayout
+                android:id="@+id/ll_phbic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Phosphate bicalcique"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/qte_phbic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qte)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_phbic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- Lys -->
+            <LinearLayout
+                android:id="@+id/ll_lys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Lysine"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/qte_lys"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qte)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_lys"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- Met -->
+            <LinearLayout
+                android:id="@+id/ll_met"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Méthionine"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/qte_met"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qte)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_met"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <!-- sel -->
+            <LinearLayout
+                android:id="@+id/ll_sel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Sel"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/qte_sel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qte)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_sel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- fer -->
+            <LinearLayout
+                android:id="@+id/ll_fer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Fer"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/qte_fer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qte)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_fer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- cmv -->
+            <LinearLayout
+                android:id="@+id/ll_premix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Prémix"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/qte_premix"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qte)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_premix"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- ctr -->
+            <LinearLayout
+                android:id="@+id/ll_ctr_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:text="Concentré chair"
+
+                    android:textColor="@color/black"
+                    android:inputType="" />
+                <EditText
+                    android:id="@+id/qte_ctr_c"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qte)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_ctr_c"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- ctr -->
+            <LinearLayout
+                android:id="@+id/ll_ctr_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-6dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:enabled="false"
+                    android:inputType=""
+                    android:text="Concentré ponte"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/qte_ctr_p"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Qté)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/fprix_ctr_p"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="(Prix)"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- phase -->
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@color/black_overlay" />
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="-6dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:enabled="false"
+                android:textStyle="bold"
+                android:text="Total par Kg"
+
+                android:textColor="@color/colorAccentP"
+                android:inputType="" />
+            <EditText
+                android:id="@+id/qte_tot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:hint="(Qté)"
+                android:inputType="number"
+                android:enabled="false"
+                android:textColor="@color/colorAccentP" />
+            <EditText
+                android:id="@+id/prix__tot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:hint="(Prix)"
+                android:enabled="false"
+                android:inputType="number"
+                android:textColor="@color/colorAccentP" />
+        </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

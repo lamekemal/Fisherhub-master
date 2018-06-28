@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_commande"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="daraunited.com.fisherinnovapps.MainCommande">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/comandnami"
+                    android:ems="10"
+                    android:editable="false"
+                    android:id="@+id/TxCMAC" />
+            </GridLayout>
+            <EditText
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:ems="10"
+                android:text="..."
+                android:id="@+id/cname_a"
+                android:layout_width="match_parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="6dp">
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/qcommand"
+                        android:ems="10"
+                        android:editable="false"
+                        android:id="@+id/TxCttttoMAC" />
+
+                </GridLayout>
+                <EditText
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:text="0"
+
+                    android:id="@+id/cqte_a"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/comandotheri"
+                    android:ems="10"
+                    android:editable="false"
+                    android:id="@+id/TsexCMAC" />
+
+            </GridLayout>
+            <EditText
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:ems="10"
+                android:text="..."
+                android:id="@+id/coth_a"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <Button
+        android:text="@string/hermib"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

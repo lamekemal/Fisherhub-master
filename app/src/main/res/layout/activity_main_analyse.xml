@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    tools:context="daraunited.com.fisherinnovapps.MainAnalyse">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/appBarLayout"
+        android:fitsSystemWindows="true">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/analysegraph"
+                app:layout_collapseMode="parallax"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:fitsSystemWindows="true"/>
+
+            <TextView
+                android:text=""
+                android:textSize="23dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:id="@+id/textView2" />
+            <TextView
+                android:text=""
+                android:textSize="40dp"
+                android:textStyle="bold"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:id="@+id/textView3" />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/nestedScrollView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="24dp">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:id="@+id/nescar">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:text="Résumé de l'aliment"
+                        android:ems="10"
+                        android:editable="false" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LTxMAIS"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txmais"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxMAIS" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:editable="false"
+                            android:text="0"
+                            android:enabled="false"
+                            android:id="@+id/TMAIS"
+                            android:layout_width="169dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SMAIS" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LTxCMAC"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txcmac"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxCMAC" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TCMAC"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SCMAC" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LTxBLE"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txble"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxBLE" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TBLE"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SBLE" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LTxDRE"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txdre"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxDRE" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TDRE"
+                            android:enabled="false"
+                            android:editable="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SDRE" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LTxSOJA"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txsoja"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxSOJA" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TSOJA"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:id="@+id/SSOJA" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LTxCOTON"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txcoton"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxCOTON" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TCOTON"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SCOTON" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LTxPAL"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txpal"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxPAL" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TPAL"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SPAL" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LTxARA"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txara"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxARA" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TARA"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SARA" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LTxFPO"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txfpo"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxFPO" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TFPO"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SFPO" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LTxHR"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txhr"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxHR" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/THR"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SHR" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LTxCH"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txch"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxCH" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TCH"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SCH" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LTxLYS"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txlys"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxLYS" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TLYS"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SLYS" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LTxMET"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txmet"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxMET" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TMET"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SMET" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LTxPHB"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txphb"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxPHB" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TPHB"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SPHB" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LTxSEL"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txsel"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxSEL" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TSEL"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SSEL" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LTxPRMX"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txprmx"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxPRMX" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TPRMX"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SPRMX" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LTxSFER"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txsfer"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxSFER" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TSFER"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SSFER" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LTxCPONT"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txcpont"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxCPONT" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TCPONT"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SCPONT" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LTxCCHAIR"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txchair"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxCCHAIR" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TCCHAIR"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SCCHAIR" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LTxSOJAG"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txsojag"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxSOJAG" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TSOJAG"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SSOJAG" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LTxSMAIS"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txsmais"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxSMAIS" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TSMAIS"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SSMAIS" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LTxSRIZ"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txsriz"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxSRIZ" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="none"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TSRIZ"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SSRIZ" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LTxMOR"
+                    android:padding="16dp">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="@string/txmor"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxMOR" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="none"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TMOR"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/MOR" />
+                </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:text="Résumé de l'aliment"
+                        android:ems="10"
+                        android:editable="false" />
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="Protéine"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxPro" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="none"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TPRO"
+                            android:editable="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="Energie Total"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxEMET" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="none"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TEMET"
+                            android:editable="false"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="Cellulose"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxCell" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="none"
+                            android:ems="10"
+                            android:text="0"
+                            android:editable="false"
+                            android:id="@+id/TCELL"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="Phosphore"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxPHO" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="none"
+                            android:ems="10"
+                            android:text="0"
+                            android:editable="false"
+                            android:id="@+id/TPHO"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="Calcium"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxCA" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="none"
+                            android:ems="10"
+                            android:text="0"
+                            android:editable="false"
+                            android:id="@+id/TCA"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="Prix de l'aliment/kg"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxPRIX" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="none"
+                            android:ems="10"
+                            android:text="0"
+                            android:editable="false"
+                            android:id="@+id/TPRIX"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="Acide Aminé"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxAA" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="none"
+                            android:ems="10"
+                            android:text="0"
+                            android:editable="false"
+                            android:id="@+id/TAA"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:text="Gaint Moyen Quotidient"
+                        android:ems="10"
+                        android:editable="false" />
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="56dp"
+                            android:text="GMQ/Poisson/Jour (g)"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxGMQ" />
+                        <EditText
+                            android:layout_height="56dp"
+                            android:inputType="none"
+                            android:editable="false"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/TGMQ"
+                            android:layout_width="101dp" />
+                    </GridLayout>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SGMQ" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:text="Courbe de croissance"
+                        android:ems="10"
+                        android:editable="false" />
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="230dp"
+                            android:layout_height="56dp"
+                            android:text="Courbe de croissance"
+                            android:ems="10"
+                            android:editable="false"
+                            android:id="@+id/TxCROI" />
+                    </GridLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>
+

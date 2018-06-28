@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/alim_l"
+        android:title="Mode Rapide" />
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/alim_p"
+        android:title="Mode Pro" />
+    <item
+        android:id="@+id/navigation_farm"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Ma Ferme" />
+
+    <item
+        android:id="@+id/navigation_adico"
+        android:icon="@drawable/cidicooic"
+        android:title="Dico de l'Agro." />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_my_link"
+        android:title="Forum" />
+
+
+</menu>

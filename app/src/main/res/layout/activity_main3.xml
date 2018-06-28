@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteY="1dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_margin="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/option_spec_title"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="26dip"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+                <TextView
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/option_spec_subtitle"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:visibility="visible" />
+                <!-- premier -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="148dp"
+                            android:layout_margin="12dp">
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/pchair"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/chicken_yello"/>
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/pchair_chek"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/cheked"
+                                android:visibility="invisible"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/poulet_chair_text"
+                            android:textColor="@color/black"
+                            android:textSize="17dp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="148dp"
+                            android:layout_margin="12dp">
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/pondeuse"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/pondeuse_deu"/>
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/pondeuse_chek"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/cheked"
+                                android:visibility="invisible"/>
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/pondeuse_text"
+                            android:textColor="@color/black"
+                            android:textSize="17dp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Second -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="148dp"
+                            android:layout_margin="12dp">
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/porc"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/porc"/>
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/porc_chek"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/cheked"
+                                android:visibility="invisible"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/porc_text"
+                            android:textColor="@color/black"
+                            android:textSize="17dp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="148dp"
+                            android:layout_margin="12dp">
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/catfish"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/catfish_blue"/>
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/catfish_chek"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/cheked"
+                                android:visibility="invisible"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/clarias_text"
+                            android:textColor="@color/black"
+                            android:textSize="17dp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- tree -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="148dp"
+                            android:layout_margin="12dp">
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/tilapia"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/tilapia_y"/>
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/tilapia_chek"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/cheked"
+                                android:visibility="invisible"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/tilapia_text"
+                            android:textColor="@color/black"
+                            android:textSize="17dp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="148dp"
+                            android:layout_margin="12dp">
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/snail"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/snail_green"/>
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/snail_chek"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/cheked"
+                                android:visibility="invisible"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/escargots_text"
+                            android:textColor="@color/black"
+                            android:textSize="17dp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+</android.support.constraint.ConstraintLayout>
