@@ -14,7 +14,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:weightSum="1">
-        <android.support.design.widget.BottomNavigationView
+        <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
         android:theme="@style/AppThemeDARA"
         android:background="?android:attr/windowBackground"
         app:menu="@menu/navigation" />
-        <android.support.v4.widget.NestedScrollView
+        <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -60,7 +60,7 @@
                         android:theme="@style/AppThemeLite"
                         android:layout_weight="0.08" />
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:id="@+id/card_view_two_a"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -107,8 +107,8 @@
                                 android:layout_alignParentRight="true"
                                 android:layout_alignParentEnd="true" />
                         </RelativeLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
                         android:id="@+id/card_view_two_b"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -156,8 +156,8 @@
                                 android:layout_alignParentEnd="true" />
 
                         </RelativeLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
                         android:id="@+id/card_view_two_bg"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -204,8 +204,8 @@
                                 android:layout_alignParentRight="true"
                                 android:layout_alignParentEnd="true" />
                         </RelativeLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
                         android:id="@+id/card_view_two_bgk"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -236,7 +236,7 @@
                                 android:textSize="@dimen/album_title"
                                 android:text="Reinitialiser les informations"/>
                         </RelativeLayout>
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
                 </LinearLayout>
 
                 <LinearLayout
@@ -312,7 +312,7 @@
                         android:inputType="textPersonName"
                         android:text="Taille des poissons aujourd'hui (g)" />
                     <!--  Password Label -->
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:theme="@style/AppThemeDARAff"
                         android:layout_height="wrap_content"
@@ -328,7 +328,7 @@
                             android:textColor="@color/jumbo"
                             android:inputType="number"
                             android:id="@+id/Txgrm" />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
                     <TextView
                         android:id="@+id/palutesyytg"
                         android:layout_width="match_parent"
@@ -340,7 +340,7 @@
                         android:inputType="textPersonName"
                         android:text="Nombre de poissons ou alevins à élever" />
                     <!--  Password Label -->
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:theme="@style/AppThemeDARAff"
                         android:layout_height="wrap_content"
@@ -357,7 +357,7 @@
                             android:inputType="number"
                             android:id="@+id/Txnpo" />
 
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
                     <TextView
                         android:id="@+id/palutesyyttg"
                         android:layout_width="match_parent"
@@ -369,7 +369,7 @@
                         android:inputType="textPersonName"
                         android:text="Type de poisson: Clarias" />
 
-                    <android.support.design.widget.FloatingActionButton
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
                         android:id="@+id/floatingActionButton"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
@@ -401,7 +401,7 @@
                         android:textColor="@color/bg_screen3"
                         android:textAlignment="center"
                         android:text="Entrer les informations concernant votre élevage et commander votre aliment pour vos poisson, adapté à votre localité" />
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:theme="@style/AppThemeDARAff"
                         android:layout_height="wrap_content"
@@ -418,8 +418,8 @@
                             android:inputType="number"
                             android:id="@+id/Txnpouu" />
 
-                    </android.support.design.widget.TextInputLayout>
-                    <android.support.design.widget.TextInputLayout
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:theme="@style/AppThemeDARAff"
                         android:layout_height="wrap_content"
@@ -436,8 +436,8 @@
                             android:inputType="number"
                             android:id="@+id/Txnpouuu" />
 
-                    </android.support.design.widget.TextInputLayout>
-                    <android.support.design.widget.TextInputLayout
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:theme="@style/AppThemeDARAff"
                         android:layout_height="wrap_content"
@@ -454,8 +454,8 @@
                             android:inputType="number"
                             android:id="@+id/Txnpouuru" />
 
-                    </android.support.design.widget.TextInputLayout>
-                    <android.support.design.widget.TextInputLayout
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:theme="@style/AppThemeDARAff"
                         android:layout_height="wrap_content"
@@ -472,8 +472,8 @@
                             android:inputType="text"
                             android:id="@+id/Txnpouurtu" />
 
-                    </android.support.design.widget.TextInputLayout>
-                    <android.support.design.widget.FloatingActionButton
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
                         android:id="@+id/floatingActionButyton"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
@@ -486,7 +486,7 @@
                         app:fabSize="normal" />
                 </LinearLayout>
             </RelativeLayout>
-        </android.support.v4.widget.NestedScrollView>
+        </androidx.core.widget.NestedScrollView>
     </LinearLayout>
 
 </RelativeLayout>

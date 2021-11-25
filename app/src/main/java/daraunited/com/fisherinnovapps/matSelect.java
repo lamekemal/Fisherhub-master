@@ -2,18 +2,14 @@ package daraunited.com.fisherinnovapps;
 
 import android.app.ProgressDialog;
 import android.os.Build;
-import android.os.Debug;
-import android.os.Environment;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.widget.NestedScrollView;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.core.widget.NestedScrollView;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Toast;
@@ -22,7 +18,6 @@ import com.sourcey.materiallogindemo.LoginActivity;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.sql.Array;
 
 import mehdi.sakout.fancybuttons.FancyButton;
 

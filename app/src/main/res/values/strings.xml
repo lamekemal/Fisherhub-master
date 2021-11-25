@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Fisher Hub</string>
+    <string name="app_name">Souba (Beta)</string>
     <string name="title_activity_scrolling_clackfram">ScrollingClackfram</string>
     <string name="large_text">
 
@@ -32,7 +32,6 @@
     <string name="status_verification_succeeded">Verification succeeded</string>
     <string name="status_sign_in_failed">Sign-in failed</string>
     <string name="instant_validation">(instant validation)</string>
-
 
     <string name="title_activity_welcome">Fisher Hub</string>
     <string name="next">SUIVANT</string>

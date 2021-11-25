@@ -5,11 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".selectSpec">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteY="1dp"
-        android:orientation="vertical">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="1dp">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -18,13 +22,15 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <ImageView
                     android:id="@+id/iron_background_img"
-                    android:layout_marginTop="60dp"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:src="@drawable/alim_l"
-                    android:nestedScrollingEnabled="false"/>
+                    android:layout_marginTop="60dp"
+                    android:nestedScrollingEnabled="false"
+                    android:src="@drawable/alim_l" />
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -35,13 +41,14 @@
 
             <!-- for rapid -->
             <RelativeLayout
+                android:id="@+id/formlite"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/formlite"
                 android:visibility="gone">
-                <android.support.v4.widget.NestedScrollView
+                <androidx.core.widget.NestedScrollView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
@@ -49,28 +56,30 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                tools:layout_editor_absoluteY="1dp"
-                                android:orientation="vertical">
+                                android:orientation="vertical"
+                                tools:layout_editor_absoluteY="1dp">
 
                                 <TextView
-                                    android:layout_margin="25dp"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_margin="25dp"
                                     android:gravity="center"
                                     android:text="@string/option_spec_title"
                                     android:textColor="@color/colorAccent"
                                     android:textSize="26sp"
                                     android:textStyle="bold"
                                     android:visibility="visible" />
+
                                 <TextView
-                                    android:layout_marginTop="-20dp"
-                                    android:layout_marginRight="9dp"
-                                    android:layout_marginLeft="9dp"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginTop="-20dp"
                                     android:gravity="center"
                                     android:text="@string/option_spec_subtitle"
                                     android:textColor="@color/black"
@@ -82,29 +91,33 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="7dp"
-                                    android:orientation="horizontal"
-                                    android:baselineAligned="false">
+                                    android:baselineAligned="false"
+                                    android:orientation="horizontal">
+
                                     <LinearLayout
                                         android:layout_width="0dp"
                                         android:layout_height="wrap_content"
                                         android:layout_margin="12dp"
                                         android:layout_weight="1"
                                         android:orientation="vertical">
+
                                         <RelativeLayout
                                             android:layout_width="match_parent"
                                             android:layout_height="148dp"
                                             android:layout_margin="12dp">
-                                            <android.support.v7.widget.AppCompatImageView
+
+                                            <androidx.appcompat.widget.AppCompatImageView
                                                 android:id="@+id/pchair"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="match_parent"
-                                                android:src="@drawable/chicken_yello"/>
-                                            <android.support.v7.widget.AppCompatImageView
+                                                android:src="@drawable/chicken_yello" />
+
+                                            <androidx.appcompat.widget.AppCompatImageView
                                                 android:id="@+id/pchair_chek"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="match_parent"
                                                 android:src="@drawable/cheked"
-                                                android:visibility="invisible"/>
+                                                android:visibility="invisible" />
                                         </RelativeLayout>
 
                                         <TextView
@@ -128,17 +141,19 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="148dp"
                                             android:layout_margin="12dp">
-                                            <android.support.v7.widget.AppCompatImageView
+
+                                            <androidx.appcompat.widget.AppCompatImageView
                                                 android:id="@+id/pondeuse"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="match_parent"
-                                                android:src="@drawable/pondeuse_deu"/>
-                                            <android.support.v7.widget.AppCompatImageView
+                                                android:src="@drawable/pondeuse_deu" />
+
+                                            <androidx.appcompat.widget.AppCompatImageView
                                                 android:id="@+id/pondeuse_chek"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="match_parent"
                                                 android:src="@drawable/cheked"
-                                                android:visibility="invisible"/>
+                                                android:visibility="invisible" />
                                         </RelativeLayout>
 
 
@@ -158,8 +173,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="7dp"
-                                    android:orientation="horizontal"
-                                    android:baselineAligned="false">
+                                    android:baselineAligned="false"
+                                    android:orientation="horizontal">
+
                                     <LinearLayout
                                         android:layout_width="0dp"
                                         android:layout_height="wrap_content"
@@ -171,17 +187,19 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="148dp"
                                             android:layout_margin="12dp">
-                                            <android.support.v7.widget.AppCompatImageView
+
+                                            <androidx.appcompat.widget.AppCompatImageView
                                                 android:id="@+id/porc"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="match_parent"
-                                                android:src="@drawable/porc"/>
-                                            <android.support.v7.widget.AppCompatImageView
+                                                android:src="@drawable/porc" />
+
+                                            <androidx.appcompat.widget.AppCompatImageView
                                                 android:id="@+id/porc_chek"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="match_parent"
                                                 android:src="@drawable/cheked"
-                                                android:visibility="invisible"/>
+                                                android:visibility="invisible" />
                                         </RelativeLayout>
 
                                         <TextView
@@ -205,17 +223,19 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="148dp"
                                             android:layout_margin="12dp">
-                                            <android.support.v7.widget.AppCompatImageView
+
+                                            <androidx.appcompat.widget.AppCompatImageView
                                                 android:id="@+id/catfish"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="match_parent"
-                                                android:src="@drawable/catfish_blue"/>
-                                            <android.support.v7.widget.AppCompatImageView
+                                                android:src="@drawable/catfish_blue" />
+
+                                            <androidx.appcompat.widget.AppCompatImageView
                                                 android:id="@+id/catfish_chek"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="match_parent"
                                                 android:src="@drawable/cheked"
-                                                android:visibility="invisible"/>
+                                                android:visibility="invisible" />
                                         </RelativeLayout>
 
                                         <TextView
@@ -234,8 +254,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="7dp"
-                                    android:orientation="horizontal"
-                                    android:baselineAligned="false">
+                                    android:baselineAligned="false"
+                                    android:orientation="horizontal">
+
                                     <LinearLayout
                                         android:layout_width="0dp"
                                         android:layout_height="wrap_content"
@@ -247,17 +268,19 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="148dp"
                                             android:layout_margin="12dp">
-                                            <android.support.v7.widget.AppCompatImageView
+
+                                            <androidx.appcompat.widget.AppCompatImageView
                                                 android:id="@+id/tilapia"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="match_parent"
-                                                android:src="@drawable/tilapia_y"/>
-                                            <android.support.v7.widget.AppCompatImageView
+                                                android:src="@drawable/tilapia_y" />
+
+                                            <androidx.appcompat.widget.AppCompatImageView
                                                 android:id="@+id/tilapia_chek"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="match_parent"
                                                 android:src="@drawable/cheked"
-                                                android:visibility="invisible"/>
+                                                android:visibility="invisible" />
                                         </RelativeLayout>
 
                                         <TextView
@@ -281,17 +304,19 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="148dp"
                                             android:layout_margin="12dp">
-                                            <android.support.v7.widget.AppCompatImageView
+
+                                            <androidx.appcompat.widget.AppCompatImageView
                                                 android:id="@+id/snail"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="match_parent"
-                                                android:src="@drawable/snail_green"/>
-                                            <android.support.v7.widget.AppCompatImageView
+                                                android:src="@drawable/snail_green" />
+
+                                            <androidx.appcompat.widget.AppCompatImageView
                                                 android:id="@+id/snail_chek"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="match_parent"
                                                 android:src="@drawable/cheked"
-                                                android:visibility="invisible"/>
+                                                android:visibility="invisible" />
                                         </RelativeLayout>
 
                                         <TextView
@@ -308,50 +333,53 @@
                             </LinearLayout>
                         </RelativeLayout>
                     </RelativeLayout>
-                </android.support.v4.widget.NestedScrollView>
+                </androidx.core.widget.NestedScrollView>
             </RelativeLayout>
 
             <!-- Bloc of code Mode Pro -->
             <RelativeLayout
+                android:id="@+id/formpro"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/formpro">
+                android:visibility="visible">
 
                 <!--hheader -->
                 <LinearLayout
                     android:id="@+id/my_header_non"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="-6dp"
                     android:layout_alignParentTop="true"
+                    android:layout_marginTop="-6dp"
                     android:orientation="vertical">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="-1dp"
                         android:orientation="horizontal">
+
                         <ProgressBar
                             android:id="@+id/prg_em"
-                            android:layout_width="0dp"
                             style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
-                            android:layoutDirection="rtl"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.5"
-                            android:progress="80"
-                            android:layout_height="wrap_content" />
+                            android:layoutDirection="rtl"
+                            android:progress="80" />
+
                         <ProgressBar
                             android:id="@+id/prg_mat"
-                            android:layout_width="0dp"
                             style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.5"
-                            android:progress="50"
-                            android:layout_height="wrap_content" />
+                            android:progress="50" />
                     </LinearLayout>
 
                     <TextView
-
-                        android:layout_margin="15dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
                         android:gravity="center"
                         android:text="Formulation d'aliment ᴾᴿᴼ"
                         android:textColor="@color/pro_tool_text"
@@ -360,13 +388,13 @@
                         android:visibility="visible" />
 
                     <TextView
-                        android:layout_marginTop="-10dp"
-                        android:layout_marginRight="9dp"
-                        android:layout_marginLeft="9dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginRight="9dp"
+                        android:layout_marginTop="-10dp"
                         android:gravity="center"
-                        android:text="Aujuster ou préciser les valeurs des matières premières composante de votre aliment"
+                        android:text="Ajuster ou préciser les valeurs des matières premières composante de votre aliment"
                         android:textColor="@color/black"
                         android:textSize="17sp"
                         android:visibility="visible" />
@@ -374,14 +402,15 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="23dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginLeft="10dp"
                         android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:orientation="horizontal"
-                        android:background="@color/esc_tr">
+                        android:layout_marginTop="5dp"
+                        android:background="@color/esc_tr"
+                        android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/txt_prix"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="9dp"
@@ -395,7 +424,7 @@
                             android:visibility="visible" />
 
                         <TextView
-                            android:id="@+id/txxt_em"
+                            android:id="@+id/txt_em"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
@@ -425,825 +454,1269 @@
 
                 </LinearLayout>
 
-                <android.support.v4.widget.NestedScrollView
+                <androidx.core.widget.NestedScrollView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-
                     android:layout_below="@+id/my_header_non">
-                <!--corps-->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <android.support.v7.widget.CardView
+                    <!--corps-->
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="105dp"
-                        android:layout_margin="16dp">
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
-                        <LinearLayout
+                        <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-                            <ImageView
-                                android:layout_width="100dp"
-                                android:layout_height="100dp"
-                                android:src="@drawable/freshsweetcorn"/>
+                            android:layout_height="105dp"
+                            android:layout_margin="16dp">
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:baselineAligned="false"
-                                android:orientation="vertical"
-                                android:padding="16dp">
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:src="@drawable/freshsweetcorn" />
+
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
-                                    <EditText
-                                        android:id="@+id/TxMAIS"
-                                        android:layout_width="0dp"
-                                        android:layout_weight="0.80"
-                                        android:layout_height="56dp"
-                                        android:enabled="false"
-                                        android:textColor="@color/black"
-                                        android:ems="10"
-                                        android:text="@string/txmais" />
-                                    <EditText
-                                        android:id="@+id/TMAIS"
-                                        android:layout_width="0dp"
-                                        android:layout_weight="0.20"
-                                        android:layout_height="56dp"
-                                        android:ems="10"
-                                        android:inputType="number"
-                                        android:text="0" />
+                                    android:baselineAligned="false"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxMAIS"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.80"
+                                            android:ems="10"
+                                            android:enabled="false"
+                                            android:text="@string/txmais"
+                                            android:textColor="@color/black" />
+
+                                        <EditText
+                                            android:id="@+id/TMAIS"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.20"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SMAIS"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
                                 </LinearLayout>
-                                <SeekBar
-                                    android:id="@+id/SMAIS"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content" />
                             </LinearLayout>
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
+                        </androidx.cardview.widget.CardView>
 
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
+                        <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txcmac"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxCMAC" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TCMAC"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SCMAC" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txble"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxBLE" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TBLE"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SBLE" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txdre"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxDRE" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TDRE"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SDRE" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txsoja"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxSOJA" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TSOJA"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SSOJA" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txcoton"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxCOTON" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TCOTON"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SCOTON" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txpal"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxPAL" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TPAL"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SPAL" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txara"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxARA" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TARA"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SARA" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txfpo"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxFPO" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TFPO"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SFPO" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txhr"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxHR" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/THR"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SHR" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txch"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxCH" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TCH"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SCH" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txlys"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxLYS" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TLYS"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SLYS" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txmet"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxMET" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TMET"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SMET" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txphb"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxPHB" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TPHB"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SPHB" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txsel"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxSEL" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TSEL"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SSEL" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txprmx"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxPRMX" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TPRMX"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SPRMX" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txsfer"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxSFER" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TSFER"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SSFER" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txcpont"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxCPONT" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TCPONT"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SCPONT" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txchair"
-                                    android:ems="10"
+                            android:layout_margin="16dp">
 
-                                    android:editable="false"
-                                    android:id="@+id/TxCCHAIR" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TCCHAIR"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
+                            <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SCCHAIR" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txsojag"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxSOJAG" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TSOJAG"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SSOJAG" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txsmais"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxSMAIS" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TSMAIS"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SSMAIS" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txsriz"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxSRIZ" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TSRIZ"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/SSRIZ" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <EditText
-                                    android:layout_width="230dp"
-                                    android:layout_height="56dp"
-                                    android:text="@string/txmor"
-                                    android:ems="10"
-                                    android:editable="false"
-                                    android:id="@+id/TxMOR" />
-                                <EditText
-                                    android:layout_height="56dp"
-                                    android:inputType="number"
-                                    android:ems="10"
-                                    android:text="0"
-                                    android:id="@+id/TMOR"
-                                    android:layout_width="101dp" />
-                            </GridLayout>
-                            <SeekBar
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/MOR" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                    <android.support.v7.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-                            <GridLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
-                            </GridLayout>
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                </LinearLayout>
-                </android.support.v4.widget.NestedScrollView>
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxCMAC"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.80"
+                                            android:editable="false"
+                                            android:ems="10"
+                                            android:text="@string/txcmac"
+                                            android:textSize="12dp" />
+
+                                        <EditText
+                                            android:id="@+id/TCMAC"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.20"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SCMAC"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxBLE"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:ems="10"
+                                            android:text="@string/txble" />
+
+                                        <EditText
+                                            android:id="@+id/TBLE"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SBLE"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxDRE"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:ems="10"
+                                            android:text="@string/txdre" />
+
+                                        <EditText
+                                            android:id="@+id/TDRE"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SDRE"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxSOJA"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:ems="10"
+                                            android:text="@string/txsoja"
+                                            android:textSize="12dp" />
+
+                                        <EditText
+                                            android:id="@+id/TSOJA"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SSOJA"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxCOTON"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:ems="10"
+                                            android:text="@string/txcoton"
+                                            android:textSize="12dp" />
+
+                                        <EditText
+                                            android:id="@+id/TCOTON"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SCOTON"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText android:id="@+id/TxPAL"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:textSize="12dp"
+                                            android:ems="10"
+                                            android:text="@string/txpal" />
+
+                                        <EditText
+                                            android:id="@+id/TPAL"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SPAL"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxARA"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:textSize="12dp"
+                                            android:ems="10"
+                                            android:text="@string/txara" />
+
+                                        <EditText
+                                            android:id="@+id/TARA"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SARA"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxFPO"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:textSize="12dp"
+                                            android:editable="false"
+                                            android:ems="10"
+                                            android:text="@string/txfpo" />
+
+                                        <EditText
+                                            android:id="@+id/TFPO"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SFPO"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxHR"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:ems="10"
+                                            android:text="@string/txhr" />
+
+                                        <EditText
+                                            android:id="@+id/THR"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SHR"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxCH"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:textSize="12dp"
+                                            android:ems="10"
+                                            android:text="@string/txch" />
+
+                                        <EditText
+                                            android:id="@+id/TCH"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SCH"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxLYS"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:ems="10"
+                                            android:text="@string/txlys" />
+
+                                        <EditText
+                                            android:id="@+id/TLYS"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SLYS"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxMET"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:ems="10"
+                                            android:text="@string/txmet" />
+
+                                        <EditText
+                                            android:id="@+id/TMET"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SMET"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxPHB"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:textSize="10dp"
+                                            android:ems="10"
+                                            android:text="@string/txphb" />
+
+                                        <EditText
+                                            android:id="@+id/TPHB"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SPHB"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxSEL"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:ems="10"
+                                            android:text="@string/txsel" />
+
+                                        <EditText
+                                            android:id="@+id/TSEL"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SSEL"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxPRMX"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:ems="10"
+                                            android:text="@string/txprmx" />
+
+                                        <EditText
+                                            android:id="@+id/TPRMX"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SPRMX"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxSFER"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:ems="10"
+                                            android:text="@string/txsfer" />
+
+                                        <EditText
+                                            android:id="@+id/TSFER"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SSFER"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxCPONT"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:textSize="12dp"
+                                            android:ems="10"
+                                            android:text="@string/txcpont" />
+
+                                        <EditText
+                                            android:id="@+id/TCPONT"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SCPONT"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxCCHAIR"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:textSize="12dp"
+                                            android:ems="10"
+                                            android:text="@string/txchair" />
+
+                                        <EditText
+                                            android:id="@+id/TCCHAIR"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SCCHAIR"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxSOJAG"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:ems="10"
+                                            android:text="@string/txsojag" />
+
+                                        <EditText
+                                            android:id="@+id/TSOJAG"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SSOJAG"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxSMAIS"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:ems="10"
+                                            android:text="@string/txsmais" />
+
+                                        <EditText
+                                            android:id="@+id/TSMAIS"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SSMAIS"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxSRIZ"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:ems="10"
+                                            android:text="@string/txsriz" />
+
+                                        <EditText
+                                            android:id="@+id/TSRIZ"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.2"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/SSRIZ"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/TxMOR"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.8"
+                                            android:editable="false"
+                                            android:ems="10"
+                                            android:text="@string/txmor" />
+
+                                        <EditText
+                                            android:id="@+id/TMOR"
+                                            android:layout_width="0dp"
+                                            android:layout_height="56dp"
+                                            android:layout_weight="0.20"
+                                            android:ems="10"
+                                            android:inputType="number"
+                                            android:text="0" />
+                                    </LinearLayout>
+
+                                    <SeekBar
+                                        android:id="@+id/MOR"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+
+            </RelativeLayout>
+
+            <!-- bloc of bienvcenue -->
+            <RelativeLayout
+                android:id="@+id/bienvenu_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/linkview" />
 
             </RelativeLayout>
         </RelativeLayout>
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:theme="@style/AppThemeDARA.PopupOverlay"
-        android:layout_width="wrap_content"
-        app:itemTextColor="@color/bg_screen2"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="0dp"
 
-        android:background="?android:attr/windowBackground"
-        app:menu="@menu/mainav" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:background="?android:attr/windowBackground"
+            android:theme="@style/AppThemeDARA.PopupOverlay"
+            app:itemTextColor="@color/bg_screen2"
+            app:menu="@menu/mainav" />
 
     </LinearLayout>
+
+    <!--app:srcCompat="@android:drawable/ic_m enu_save"-->
+    <Button
+
+        android:id="@+id/fab"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/butmiico" />
+
 </RelativeLayout>

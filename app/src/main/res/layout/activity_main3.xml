@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <android.support.v4.widget.NestedScrollView
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <LinearLayout
@@ -57,12 +57,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="148dp"
                             android:layout_margin="12dp">
-                            <android.support.v7.widget.AppCompatImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/pchair"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:src="@drawable/chicken_yello"/>
-                            <android.support.v7.widget.AppCompatImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/pchair_chek"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -91,12 +91,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="148dp"
                             android:layout_margin="12dp">
-                            <android.support.v7.widget.AppCompatImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/pondeuse"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:src="@drawable/pondeuse_deu"/>
-                            <android.support.v7.widget.AppCompatImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/pondeuse_chek"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -132,12 +132,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="148dp"
                             android:layout_margin="12dp">
-                            <android.support.v7.widget.AppCompatImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/porc"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:src="@drawable/porc"/>
-                            <android.support.v7.widget.AppCompatImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/porc_chek"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -166,12 +166,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="148dp"
                             android:layout_margin="12dp">
-                            <android.support.v7.widget.AppCompatImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/catfish"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:src="@drawable/catfish_blue"/>
-                            <android.support.v7.widget.AppCompatImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/catfish_chek"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -206,12 +206,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="148dp"
                             android:layout_margin="12dp">
-                            <android.support.v7.widget.AppCompatImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/tilapia"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:src="@drawable/tilapia_y"/>
-                            <android.support.v7.widget.AppCompatImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/tilapia_chek"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -240,12 +240,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="148dp"
                             android:layout_margin="12dp">
-                            <android.support.v7.widget.AppCompatImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/snail"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:src="@drawable/snail_green"/>
-                            <android.support.v7.widget.AppCompatImageView
+                            <androidx.appcompat.widget.AppCompatImageView
                                 android:id="@+id/snail_chek"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -264,10 +264,10 @@
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
-        </android.support.v4.widget.NestedScrollView>
+        </androidx.core.widget.NestedScrollView>
     </RelativeLayout>
 
-    <android.support.design.widget.BottomNavigationView
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -279,4 +279,4 @@
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/navigation" />
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

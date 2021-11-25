@@ -1,0 +1,35 @@
+keytool -exportcert -list -v -alias archeosstoreapps2017 -keystore C:\Users\Kemal\Documents\signandroid.jks
+
+Name Archeos
+archeosstoreapps2017
+
+	864833
+	
+	
+	/////////////////////////////////////////////////////////// INFROMATION DU CERTIFICA//////////////////////////////////////////////////////////////
+	Entrez le mot de passe du fichier de clés : [{864°833}]
+Nom d'alias : archeosstoreapps2017
+Date de création : 5 févr. 2017
+Type d'entrée : PrivateKeyEntry
+Longueur de chaîne du certificat : 1
+Certificat[1]:
+Propriétaire : CN=DARA Kemal, OU=AIC, O=ARCHEOS, L=BENIN, ST=BENIN-PORTO-NOVO-66594469
+Emetteur : CN=DARA Kemal, OU=AIC, O=ARCHEOS, L=BENIN, ST=BENIN-PORTO-NOVO-66594469
+Numéro de série : 61bf2d1
+Valide du : Sun Feb 05 21:24:25 WAT 2017 au : Mon Jan 24 21:24:25 WAT 2067
+Empreintes du certificat :
+         MD5:  3C:7A:EA:34:17:33:99:CF:20:81:8A:FB:99:E0:48:D6
+         SHA1 : F4:84:EA:81:4F:0C:CD:31:80:22:00:B0:1B:05:CC:47:9A:94:7F:3E
+         SHA256 : 84:23:AD:D3:DA:92:8F:B8:AE:35:62:80:EE:26:79:4D:28:1B:26:BF:E4:58:29:0F:4E:2E:84:BD:B8:28:C5:97
+         Nom de l'algorithme de signature : SHA256withRSA
+         Version : 3
+
+Extensions :
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 36 FF 13 16 9A 9A C7 5C   83 AC 42 DE A5 C0 85 09  6......\..B.....
+0010: 30 18 F2 41                                        0..A
+]
+]

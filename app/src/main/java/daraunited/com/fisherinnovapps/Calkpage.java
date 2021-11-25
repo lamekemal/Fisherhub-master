@@ -3,11 +3,11 @@ package daraunited.com.fisherinnovapps;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Build;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -16,10 +16,8 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.lang.reflect.Array;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.security.PublicKey;
 
 public class Calkpage extends AppCompatActivity {
     double shardemaxvalue;
@@ -243,6 +241,7 @@ public class Calkpage extends AppCompatActivity {
             }
         });
     }
+
     Integer getIntFromMyctrl(Integer VARIABLE){
         EditText TCMAC = (EditText) findViewById(VARIABLE);
         String varsx = TCMAC.getText().toString();

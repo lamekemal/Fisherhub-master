@@ -6,10 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".matSelect">
-    <android.support.v4.widget.NestedScrollView
+
+    <androidx.core.widget.NestedScrollView
         android:id="@+id/pim_lay"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -106,8 +109,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
                     android:inputType="number"
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -180,9 +183,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
-
                     android:inputType="number"
+
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -215,9 +218,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
-
                     android:inputType="number"
+
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -250,9 +253,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
-
                     android:inputType="number"
+
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -297,9 +300,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
-
                     android:inputType="number"
+
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -332,9 +335,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
-
                     android:inputType="number"
+
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -367,9 +370,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
-
                     android:inputType="number"
+
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -402,9 +405,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
-
                     android:inputType="number"
+
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -437,9 +440,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
-
                     android:inputType="number"
+
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -472,9 +475,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
-
                     android:inputType="number"
+
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -506,8 +509,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:inputType="number"
                     android:hint="(Prix)"
+                    android:inputType="number"
                     android:text="200"
 
                     android:textColor="@color/black" />
@@ -542,9 +545,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
-
                     android:inputType="number"
+
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -589,9 +592,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
-
                     android:inputType="number"
+
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -624,9 +627,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
-
                     android:inputType="number"
+
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -671,9 +674,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
-
                     android:inputType="number"
+
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -706,9 +709,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
-
                     android:inputType="number"
+
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -753,9 +756,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
-
                     android:inputType="number"
+
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -788,9 +791,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
-
                     android:inputType="number"
+
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -823,9 +826,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
-
                     android:inputType="number"
+
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -849,9 +852,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
                     android:enabled="false"
+                    android:inputType=""
                     android:text="Concentré chair"
-                    android:textColor="@color/black"
-                    android:inputType="" />
+                    android:textColor="@color/black" />
 
                 <EditText
                     android:id="@+id/prix_ctr_c"
@@ -859,9 +862,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
-
                     android:inputType="number"
+
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -885,9 +888,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
                     android:enabled="false"
+                    android:inputType=""
                     android:text="Concentré ponte"
-                    android:textColor="@color/black"
-                    android:inputType="" />
+                    android:textColor="@color/black" />
 
                 <EditText
                     android:id="@+id/prix_ctr_p"
@@ -895,9 +898,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:hint="(Prix)"
-                    android:text="200"
-
                     android:inputType="number"
+
+                    android:text="200"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -917,21 +920,25 @@
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_marginTop="-5dp"
+                android:gravity="center"
                 android:orientation="horizontal">
-                <RadioButton android:id="@+id/radio_pirates"
-                    android:layout_width="wrap_content"
-                    android:layout_marginLeft="9dp"
-                    android:layout_marginRight="9dp"
-                    android:layout_height="wrap_content"
-                    android:text="Demarrage"/>
-                <RadioButton android:id="@+id/radio_ninjas"
+
+                <RadioButton
+                    android:id="@+id/radio_pirates"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="9dp"
                     android:layout_marginRight="9dp"
-                    android:text="Croiss-Finit"/>
+                    android:text="Demarrage" />
+
+                <RadioButton
+                    android:id="@+id/radio_ninjas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:text="Croiss-Finit" />
             </RadioGroup>
 
             <!-- phase -->
@@ -950,30 +957,35 @@
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_marginTop="-5dp"
+                android:gravity="center"
                 android:orientation="horizontal">
-                <RadioButton android:id="@+id/radio_tropic"
-                    android:layout_width="wrap_content"
-                    android:layout_marginLeft="9dp"
-                    android:layout_marginRight="9dp"
-                    android:layout_height="wrap_content"
-                    android:text="Tropical"/>
-                <RadioButton android:id="@+id/radio_tempere"
+
+                <RadioButton
+                    android:id="@+id/radio_tropic"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="9dp"
                     android:layout_marginRight="9dp"
-                    android:text="Tempéré"/>
+                    android:text="Tropical" />
+
+                <RadioButton
+                    android:id="@+id/radio_tempere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:text="Tempéré" />
             </RadioGroup>
 
             <CheckBox
+
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="9dp"
                 android:layout_marginRight="9dp"
                 android:layout_marginTop="11dp"
-                android:text="Utiliser l'intelligence artificielle (Expérimentale)*"
-                android:layout_height="wrap_content" />
+                android:text="Utiliser l'intelligence artificielle (Expérimentale)*" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -989,26 +1001,25 @@
                 android:id="@+id/btn_android_prefix"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
                 android:padding="10dp"
                 android:text="@string/calculer_but_matselect"
                 android:textAllCaps="true"
                 android:textSize="10sp"
-                android:layout_gravity="center"
                 fancy:fb_borderColor="#FFFFFF"
                 fancy:fb_borderWidth="2dp"
                 fancy:fb_defaultColor="#40a75a"
                 fancy:fb_disabledColor="#e4e4e4"
                 fancy:fb_focusColor="#8cc9f8"
                 fancy:fb_radius="10dp"
-                fancy:fb_textColor="#FFFFFF"
-                />
+                fancy:fb_textColor="#FFFFFF" />
 
         </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:id="@+id/sec_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -1030,6 +1041,7 @@
                 android:textSize="26dip"
                 android:textStyle="bold"
                 android:visibility="visible" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1056,8 +1068,8 @@
                     android:layout_weight="1.5"
                     android:enabled="false"
                     android:text="Matière première"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorAccentP" />
+                    android:textColor="@color/colorAccentP"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:layout_width="0dp"
@@ -1065,16 +1077,17 @@
                     android:layout_weight="0.5"
                     android:enabled="false"
                     android:text="Qté"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorAccentP" />
+                    android:textColor="@color/colorAccentP"
+                    android:textStyle="bold" />
+
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:enabled="false"
                     android:text="Prix"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorAccentP" />
+                    android:textColor="@color/colorAccentP"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <!-- ailiment ener-->
@@ -1102,8 +1115,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Qté)"
                     android:enabled="false"
+                    android:hint="(Qté)"
                     android:inputType="number"
                     android:textColor="@color/black" />
 
@@ -1112,8 +1125,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Prix)"
                     android:enabled="false"
+                    android:hint="(Prix)"
                     android:inputType="number"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -1141,17 +1154,18 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
+                    android:enabled="false"
                     android:hint="(Qte)"
                     android:inputType="number"
-                    android:enabled="false"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_cmac"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Prix)"
                     android:enabled="false"
+                    android:hint="(Prix)"
                     android:inputType="number"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -1173,23 +1187,25 @@
                     android:enabled="false"
                     android:text="Huie rouge"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/qte_hr"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Qte)"
                     android:enabled="false"
+                    android:hint="(Qte)"
                     android:inputType="number"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_hr"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
+                    android:enabled="false"
                     android:hint="(Prix)"
                     android:inputType="number"
-                    android:enabled="false"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -1202,6 +1218,7 @@
                 android:layout_marginRight="9dp"
                 android:layout_marginTop="-6dp"
                 android:orientation="horizontal">
+
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -1209,23 +1226,25 @@
                     android:enabled="false"
                     android:text="Son de maïs"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/qte_smais"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
+                    android:enabled="false"
                     android:hint="(Qté)"
                     android:inputType="number"
-                    android:enabled="false"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_smais"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
+                    android:enabled="false"
                     android:hint="(Prix)"
                     android:inputType="number"
-                    android:enabled="false"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -1246,23 +1265,25 @@
                     android:enabled="false"
                     android:text="Son de riz"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/qte_sriz"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
+                    android:enabled="false"
                     android:hint="(Qté)"
                     android:inputType="number"
-                    android:enabled="false"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_sriz"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
+                    android:enabled="false"
                     android:hint="(Prix)"
                     android:inputType="number"
-                    android:enabled="false"
                     android:textColor="@color/black" />
             </LinearLayout>
             <!-- sble -->
@@ -1274,6 +1295,7 @@
                 android:layout_marginRight="9dp"
                 android:layout_marginTop="-6dp"
                 android:orientation="horizontal">
+
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -1281,22 +1303,24 @@
                     android:enabled="false"
                     android:text="Son de blé"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/qte_sble"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Qté)"
                     android:enabled="false"
+                    android:hint="(Qté)"
                     android:inputType="number"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_sble"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Prix)"
                     android:enabled="false"
+                    android:hint="(Prix)"
                     android:inputType="number"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -1310,6 +1334,7 @@
                 android:layout_marginRight="9dp"
                 android:layout_marginTop="-6dp"
                 android:orientation="horizontal">
+
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -1317,22 +1342,24 @@
                     android:enabled="false"
                     android:text="Drèche"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/qte_dre"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Qté)"
                     android:enabled="false"
+                    android:hint="(Qté)"
                     android:inputType="number"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_dre"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Prix)"
                     android:enabled="false"
+                    android:hint="(Prix)"
                     android:inputType="number"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -1346,6 +1373,7 @@
                 android:layout_marginRight="9dp"
                 android:layout_marginTop="-6dp"
                 android:orientation="horizontal">
+
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -1353,22 +1381,24 @@
                     android:enabled="false"
                     android:text="Tourteau soja"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/qte_tsoja"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Qté)"
                     android:enabled="false"
+                    android:hint="(Qté)"
                     android:inputType="number"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_tsoja"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Prix)"
                     android:enabled="false"
+                    android:hint="(Prix)"
                     android:inputType="number"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -1382,6 +1412,7 @@
                 android:layout_marginRight="9dp"
                 android:layout_marginTop="-6dp"
                 android:orientation="horizontal">
+
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -1389,23 +1420,25 @@
                     android:enabled="false"
                     android:text="Tourteau coton"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/qte_tcoton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Qté)"
                     android:enabled="false"
+                    android:hint="(Qté)"
                     android:inputType="number"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_tcoton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
+                    android:enabled="false"
                     android:hint="(Prix)"
                     android:inputType="number"
-                    android:enabled="false"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -1418,6 +1451,7 @@
                 android:layout_marginRight="9dp"
                 android:layout_marginTop="-6dp"
                 android:orientation="horizontal">
+
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -1425,23 +1459,25 @@
                     android:enabled="false"
                     android:text="Tourteau palmiste"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/qte_tpalm"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
+                    android:enabled="false"
                     android:hint="(Qté)"
                     android:inputType="number"
-                    android:enabled="false"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_tpalm"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
+                    android:enabled="false"
                     android:hint="(Prix)"
                     android:inputType="number"
-                    android:enabled="false"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -1462,22 +1498,24 @@
                     android:enabled="false"
                     android:text="Tourteau arachide"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/qte_tara"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Qté)"
                     android:enabled="false"
+                    android:hint="(Qté)"
                     android:inputType="number"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_tara"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Prix)"
                     android:enabled="false"
+                    android:hint="(Prix)"
                     android:inputType="number"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -1499,23 +1537,25 @@
                     android:enabled="false"
                     android:text="Farine de poisson"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/qte_fpoi"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:inputType="number"
-                    android:hint="(Qté)"
                     android:enabled="false"
+                    android:hint="(Qté)"
+                    android:inputType="number"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_fpoi"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:inputType="number"
-                    android:hint="(Prix)"
                     android:enabled="false"
+                    android:hint="(Prix)"
+                    android:inputType="number"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -1536,23 +1576,25 @@
                     android:enabled="false"
                     android:text="Graine de soja torifié"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/qte_soja"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
+                    android:enabled="false"
                     android:hint="(Qté)"
                     android:inputType="number"
-                    android:enabled="false"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_soja"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
+                    android:enabled="false"
                     android:hint="(Prix)"
                     android:inputType="number"
-                    android:enabled="false"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -1565,6 +1607,7 @@
                 android:layout_marginRight="9dp"
                 android:layout_marginTop="-6dp"
                 android:orientation="horizontal">
+
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -1572,23 +1615,25 @@
                     android:enabled="false"
                     android:text="Coquille d'huitre"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/qte_coq"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
+                    android:enabled="false"
                     android:hint="(Qte)"
                     android:inputType="number"
-                    android:enabled="false"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_coq"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
+                    android:enabled="false"
                     android:hint="(Prix)"
                     android:inputType="number"
-                    android:enabled="false"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -1601,6 +1646,7 @@
                 android:layout_marginRight="9dp"
                 android:layout_marginTop="-6dp"
                 android:orientation="horizontal">
+
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -1608,22 +1654,24 @@
                     android:enabled="false"
                     android:text="Phosphate bicalcique"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/qte_phbic"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Qte)"
                     android:enabled="false"
+                    android:hint="(Qte)"
                     android:inputType="number"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_phbic"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Prix)"
                     android:enabled="false"
+                    android:hint="(Prix)"
                     android:inputType="number"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -1637,6 +1685,7 @@
                 android:layout_marginRight="9dp"
                 android:layout_marginTop="-6dp"
                 android:orientation="horizontal">
+
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -1644,23 +1693,25 @@
                     android:enabled="false"
                     android:text="Lysine"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/qte_lys"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Qte)"
                     android:enabled="false"
+                    android:hint="(Qte)"
                     android:inputType="number"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_lys"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
+                    android:enabled="false"
                     android:hint="(Prix)"
                     android:inputType="number"
-                    android:enabled="false"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -1681,22 +1732,24 @@
                     android:enabled="false"
                     android:text="Méthionine"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/qte_met"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Qte)"
                     android:enabled="false"
+                    android:hint="(Qte)"
                     android:inputType="number"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_met"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Prix)"
                     android:enabled="false"
+                    android:hint="(Prix)"
                     android:inputType="number"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -1709,6 +1762,7 @@
                 android:layout_marginRight="9dp"
                 android:layout_marginTop="-6dp"
                 android:orientation="horizontal">
+
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -1716,22 +1770,24 @@
                     android:enabled="false"
                     android:text="Sel"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/qte_sel"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Qte)"
                     android:enabled="false"
+                    android:hint="(Qte)"
                     android:inputType="number"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_sel"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Prix)"
                     android:enabled="false"
+                    android:hint="(Prix)"
                     android:inputType="number"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -1745,6 +1801,7 @@
                 android:layout_marginRight="9dp"
                 android:layout_marginTop="-6dp"
                 android:orientation="horizontal">
+
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -1752,22 +1809,24 @@
                     android:enabled="false"
                     android:text="Fer"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/qte_fer"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Qte)"
                     android:enabled="false"
+                    android:hint="(Qte)"
                     android:inputType="number"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_fer"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Prix)"
                     android:enabled="false"
+                    android:hint="(Prix)"
                     android:inputType="number"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -1781,6 +1840,7 @@
                 android:layout_marginRight="9dp"
                 android:layout_marginTop="-6dp"
                 android:orientation="horizontal">
+
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -1788,22 +1848,24 @@
                     android:enabled="false"
                     android:text="Prémix"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/qte_premix"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Qte)"
                     android:enabled="false"
+                    android:hint="(Qte)"
                     android:inputType="number"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_premix"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Prix)"
                     android:enabled="false"
+                    android:hint="(Prix)"
                     android:inputType="number"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -1823,26 +1885,28 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
                     android:enabled="false"
-                    android:text="Concentré chair"
+                    android:inputType=""
 
-                    android:textColor="@color/black"
-                    android:inputType="" />
+                    android:text="Concentré chair"
+                    android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/qte_ctr_c"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Qte)"
                     android:enabled="false"
+                    android:hint="(Qte)"
                     android:inputType="number"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_ctr_c"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Prix)"
                     android:enabled="false"
+                    android:hint="(Prix)"
                     android:inputType="number"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -1856,6 +1920,7 @@
                 android:layout_marginRight="9dp"
                 android:layout_marginTop="-6dp"
                 android:orientation="horizontal">
+
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -1870,17 +1935,18 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Qté)"
                     android:enabled="false"
+                    android:hint="(Qté)"
                     android:inputType="number"
                     android:textColor="@color/black" />
+
                 <EditText
                     android:id="@+id/fprix_ctr_p"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Prix)"
                     android:enabled="false"
+                    android:hint="(Prix)"
                     android:inputType="number"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -1910,27 +1976,29 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1.5"
                     android:enabled="false"
-                    android:textStyle="bold"
+                    android:inputType=""
                     android:text="Total par Kg"
 
                     android:textColor="@color/colorAccentP"
-                    android:inputType="" />
+                    android:textStyle="bold" />
+
                 <EditText
                     android:id="@+id/qte_tot"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
+                    android:enabled="false"
                     android:hint="(Qté)"
                     android:inputType="number"
-                    android:enabled="false"
                     android:textColor="@color/colorAccentP" />
+
                 <EditText
                     android:id="@+id/prix__tot"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:hint="(Prix)"
                     android:enabled="false"
+                    android:hint="(Prix)"
                     android:inputType="number"
                     android:textColor="@color/colorAccentP" />
             </LinearLayout>
@@ -1939,22 +2007,21 @@
                 android:id="@+id/btn_android_back"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="30dp"
                 android:padding="10dp"
                 android:text="@string/calculer_rtr_matselect"
                 android:textAllCaps="true"
                 android:textSize="10sp"
-                android:layout_gravity="center"
                 fancy:fb_borderColor="#FFFFFF"
                 fancy:fb_borderWidth="2dp"
                 fancy:fb_defaultColor="#40a75a"
                 fancy:fb_disabledColor="#e4e4e4"
                 fancy:fb_focusColor="#8cc9f8"
                 fancy:fb_radius="10dp"
-                fancy:fb_textColor="#FFFFFF"
-                />
+                fancy:fb_textColor="#FFFFFF" />
         </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 </RelativeLayout>

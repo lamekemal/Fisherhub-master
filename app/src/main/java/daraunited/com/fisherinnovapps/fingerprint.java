@@ -2,13 +2,13 @@
 
     import android.os.Build;
     import android.os.Bundle;
-    import android.support.design.widget.TabLayout;
-    import android.support.v4.app.Fragment;
-    import android.support.v4.app.FragmentManager;
-    import android.support.v4.app.FragmentPagerAdapter;
-    import android.support.v4.view.ViewPager;
-    import android.support.v7.app.AppCompatActivity;
-    import android.support.v7.widget.Toolbar;
+    import com.google.android.material.tabs.TabLayout;
+    import androidx.fragment.app.Fragment;
+    import androidx.fragment.app.FragmentManager;
+    import androidx.fragment.app.FragmentPagerAdapter;
+    import androidx.viewpager.widget.ViewPager;
+    import androidx.appcompat.app.AppCompatActivity;
+    import androidx.appcompat.widget.Toolbar;
     import android.widget.Toast;
 
     import com.google.android.gms.common.ConnectionResult;
@@ -18,13 +18,10 @@
     import com.microsoft.windowsazure.notifications.NotificationsManager;
     import android.content.Intent;
     import android.util.Log;
-    import android.widget.TextView;
-    import android.widget.Toast;
+
     import java.util.ArrayList;
     import java.util.List;
 
-    import daraunited.com.fisherinnovapps.Notification.MyHandler;
-    import daraunited.com.fisherinnovapps.Notification.NotificationSettings;
     import daraunited.com.fisherinnovapps.Notification.RegistrationIntentService;
 
     public class fingerprint extends AppCompatActivity {
